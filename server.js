@@ -10,7 +10,7 @@ app.get("/api/federador/:dni/:sexo", async (req, res) => {
     const dni = req.params.dni;
     const sexo = req.params.sexo;
 
-    if (dni.length !== 7) {
+    if (dni.length !== 8) {
         return res.send("DNI inválido.");
     }
 
